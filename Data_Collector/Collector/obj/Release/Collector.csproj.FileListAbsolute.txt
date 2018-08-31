@@ -1,0 +1,15 @@
+C:\Users\wazg123\source\repos\Data_Collector\Collector\bin\Release\Collector.exe.config
+C:\Users\wazg123\source\repos\Data_Collector\Collector\bin\Release\Collector.exe
+C:\Users\wazg123\source\repos\Data_Collector\Collector\bin\Release\Collector.pdb
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\MainWindow.g.cs
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\App.g.cs
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\Collector_MarkupCompile.cache
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\Collector_MarkupCompile.lref
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\MainWindow.baml
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\Collector.g.resources
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\Collector.Properties.Resources.resources
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\Collector.csproj.GenerateResource.cache
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\Collector.csproj.CoreCompileInputs.cache
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\Collector.exe
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\Collector.pdb
+C:\Users\wazg123\source\repos\Data_Collector\Collector\obj\Release\Collector.csprojAssemblyReference.cache

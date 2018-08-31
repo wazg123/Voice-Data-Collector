@@ -1,0 +1,55 @@
+﻿<Window x:Class="Collector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Collector"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <ListView x:Name="lstContent" Margin="5,34,5,4.5" Grid.Row="0" SelectionChanged="lstContent_SelectionChanged">
+            <ListView.View>
+                <GridView x:Name="grdContent"/>
+            </ListView.View>
+        </ListView>
+
+        <Button x:Name="Import_Button" Content="Import Data" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.264,-0.282" Click="Import_Data"/>
+
+        <Button x:Name="Export_Button" Content="Export Data" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="75" Click="Export_Data"/>
+
+        <ComboBox x:Name="Search_Type_ComboBox"  HorizontalAlignment="Left" Margin="253,8,0,0" VerticalAlignment="Top" Width="98"/>
+
+        <TextBox x:Name="TextFilter_TextBox" HorizontalAlignment="Left" Margin="356,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" TextChanged="txtFilter_TextChanged"/>
+
+        <Button x:Name="Selected_All_Button"  Content="Select_All" HorizontalAlignment="Left" Margin="436,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.06,0.264" Click="Select_All"/>
+
+        <Button x:Name="Delete_Audios_Button" Content="Delete" HorizontalAlignment="Left" Margin="629,8,0,0" VerticalAlignment="Top" Width="75" Click="Delete_Audios" RenderTransformOrigin="-1.34,0.553"/>
+
+        <TextBlock x:Name="Current_Content" Text="This block shows selected content." HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.227,0.533"/>
+
+        <TextBlock x:Name="Progress" Text="Percentage of Completetion" HorizontalAlignment="Right" Margin="0,10,25,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+        <MediaElement x:Name="AudioPlayer" HorizontalAlignment="Left" Height="100" Margin="685,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" MediaEnded="AudioPlayer_MediaEnded"/>
+
+        <Button x:Name="Record_Button" Content="Record" HorizontalAlignment="Center" Margin="-250,70,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Record_Audio"/>
+
+        <Button x:Name="Play_Button" Content="Play" HorizontalAlignment="Center" Margin="250,70,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Play_Audios"/>
+
+        <Button x:Name="Stop_Audio_Button" Content="Terminate" HorizontalAlignment="Center" Margin="250,100,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Stop_Audio"/>
+
+        <Button x:Name="Terminate_Record_Button" Content="Terminate" HorizontalAlignment="Center" Margin="-250,100,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.504,-0.534" Click="Terminate_Record"/>
+
+        <Button x:Name="Delete_All_Button" Content="Delete_All" HorizontalAlignment="Left" Margin="709,8,0,0" VerticalAlignment="Top" Width="76" Click="Delete_All_Audios"/>
+
+    </Grid>
+</Window>
